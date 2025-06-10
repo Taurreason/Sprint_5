@@ -1,5 +1,4 @@
 import pytest
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from locators import *
@@ -30,8 +29,8 @@ def login_user(driver):
     driver.find_element(*Buttons.LOGIN_REGISTER).click()
 
     # Вводим логин и пароль
-    driver.find_element(*Inputs.EMAIL).send_keys("kudakaeva_22@yandex.ru")
-    driver.find_element(*Inputs.PASSWORD).send_keys("Qawsedrf1@#456&")
+    driver.find_element(*Inputs.EMAIL).send_keys("kudakaeva_22@yyandex.ru")
+    driver.find_element(*Inputs.PASSWORD).send_keys("asdfghjkl")
 
     # Нажимаем "Войти"
     driver.find_element(*Buttons.LOGIN).click()

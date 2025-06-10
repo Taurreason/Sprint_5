@@ -1,6 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from locators import Buttons, Inputs, Headers, User, Errors
+from locators import *
 
 
 class TestLogin:
